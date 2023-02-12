@@ -6,6 +6,7 @@ function initOneLevelJS() {
     ROS();
     STT();
     SLD();
+    console.log(">> OneLevelJS initialized");
 }
 
 // ========== STT - Scroll to Top ==========
