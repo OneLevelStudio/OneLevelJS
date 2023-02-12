@@ -1,12 +1,12 @@
 initOneLevelJS();
 
 function initOneLevelJS() {
+    console.log(">> OneLevelJS initializing...");
     MDI();
     DRK();
     ROS();
     STT();
     SLD();
-    console.log(">> OneLevelJS initialized");
 }
 
 // ========== STT - Scroll to Top ==========
@@ -100,7 +100,7 @@ function DRK() {
             isDarkMode === "true" ? disableDarkMode() : enableDarkMode();
         });
     } else {
-        console.log(">> SolidCoreJS: DRK disabled");
+        console.log(">> OneLevelJS: DRK disabled");
     }
 
 }
@@ -304,7 +304,7 @@ function ROS() {
             ";}" +
             "</style>"
         );
-        console.log(">> SolidCoreJS: ROS initialized");
+        console.log(">> OneLevelJS: ROS initialized");
     }
 
     function updateROS() {
