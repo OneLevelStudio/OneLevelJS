@@ -1,0 +1,242 @@
+:root {
+    --color-bg: hsl(0, 0%, 90%);
+    --color-tx: hsl(0, 0%, 10%);
+    --color-lk: gold;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    transition: all ease 0.3s;
+    font-family: 'Inter', 'Roboto', Arial, sans-serif;
+    scroll-behavior: smooth;
+    line-height: 1.5;
+    font-size: 16px;
+}
+
+body {
+    background: var(--color-bg);
+    color: var(--color-tx);
+}
+
+::selection {
+    background: var(--color-tx);
+    color: var(--color-bg);
+}
+
+ul,
+ol {
+    list-style-position: inside;
+}
+
+button {
+    padding: 0.5rem 1rem;
+    background: var(--color-tx);
+    color: var(--color-bg);
+    border: 2px solid var(--color-tx);
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: var(--color-bg);
+    color: var(--color-tx);
+}
+
+/* ========== Text & Link ========== */
+h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 2.0rem;
+    font-weight: 600;
+}
+
+h3 {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+p {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+a {
+    position: relative;
+    color: inherit;
+    text-decoration: none;
+    border-bottom: calc(1rem/16) dashed grey;
+    transition: all ease 0.6s;
+}
+
+a:hover {
+    border-bottom: calc(1rem/16) dashed transparent;
+}
+
+a::after {
+    content: '';
+    z-index: -1;
+    position: absolute;
+    bottom: -1px;
+    left: -0px;
+    width: 0%;
+    height: calc(100% + 2px);
+    background: var(--color-lk);
+    border-radius: 2px;
+    transition: all ease 0.6s;
+}
+
+a:hover::after {
+    width: calc(100% + 0px);
+}
+
+/* ========== Desktop and mobile ========== */
+.desktop-only {
+    display: block;
+}
+
+@media only screen and (max-width: 1000px) {
+    .desktop-only {
+        display: none;
+    }
+}
+
+.mobile-only {
+    display: block;
+}
+
+@media only screen and (min-width: 1000px) {
+    .mobile-only {
+        display: none;
+    }
+}
+
+/* ========== Utilities ========== */
+.center {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.center-x {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.center-y {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.acp {
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    pointer-events: none;
+}
+
+/* ========== Scrollbar ========== */
+::-webkit-scrollbar {
+    background: transparent;
+    width: 10px;
+    border-radius: 999px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+    border-radius: 999px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: hsla(0, 0%, 50%, 0.5);
+    border-radius: 999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: hsla(0, 0%, 50%, 0.7);
+}
+
+/* ========== RWD ========== */
+.row {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+}
+
+@media screen and (min-width: 1000px) {
+    .row {
+        flex-wrap: nowrap;
+    }
+}
+
+.row [class^='col'] {
+    position: relative;
+    width: 100%;
+}
+
+@media screen and (min-width: 1000px) {
+    .row .col-1 {
+        width: 8.33%;
+    }
+
+    .row .col-2 {
+        width: 16.66%;
+    }
+
+    .row .col-3 {
+        width: 25%;
+    }
+
+    .row .col-4 {
+        width: 33.33%;
+    }
+
+    .row .col-5 {
+        width: 41.66%;
+    }
+
+    .row .col-6 {
+        width: 50%;
+    }
+
+    .row .col-7 {
+        width: 58.33%;
+    }
+
+    .row .col-8 {
+        width: 66.66%;
+    }
+
+    .row .col-9 {
+        width: 75%;
+    }
+
+    .row .col-10 {
+        width: 83.33%;
+    }
+
+    .row .col-11 {
+        width: 91.66%;
+    }
+
+    .row .col-12 {
+        width: 100%;
+    }
+}
