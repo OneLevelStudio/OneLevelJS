@@ -1,9 +1,4 @@
 initOneLevelJS();
-// MDI();
-// DRK();
-// ROS();
-// STT();
-// SLD();
 
 function initOneLevelJS() {
     MDI();
