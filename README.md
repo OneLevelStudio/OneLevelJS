@@ -1,8 +1,18 @@
 # OneLevelJS
 
-## jsDelivr
+## Features
+* Simple and clean for modern web UI
+* Super lightweight:
+  * OneLevelCSS: `3.49 KB`
+  * OneLevelJS: `8.94 KB`
+
+## CDN
+### jsDelivr (Recommended)
 * OneLevelCSS: `https://cdn.jsdelivr.net/gh/OneLevelStudio/OneLevelJS/onelevel.min.css`
 * OneLevelJS: `https://cdn.jsdelivr.net/gh/OneLevelStudio/OneLevelJS/onelevel.js`
+### Github Raw
+* OneLevelCSS: `https://raw.githubusercontent.com/OneLevelStudio/OneLevelJS/main/onelevel.css`
+* OneLevelJS: `https://raw.githubusercontent.com/OneLevelStudio/OneLevelJS/main/onelevel.js`
 
 ## Installation
 ### OneLevelCSS
