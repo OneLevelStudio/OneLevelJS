@@ -56,6 +56,7 @@
     
     ...
     
+    <!-- JS -->
     <script src="https://cdn.jsdelivr.net/gh/OneLevelStudio/OneLevelJS/onelevel.js"></script>
 </body>
 
