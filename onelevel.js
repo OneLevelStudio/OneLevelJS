@@ -114,7 +114,8 @@ function initDRK() {
             filter: invert(1) hue-rotate(180deg);
         }
         
-        .darkmode img {
+        .darkmode img,
+        .darkmode video {
             filter: invert(1) hue-rotate(180deg);
         }
         
