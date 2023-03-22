@@ -13,7 +13,7 @@ function initOneLevelJS() {
 function STT() {
     document.body.insertAdjacentHTML(
         "afterbegin",
-        "<a href='#' style='opacity: 1.0;'><div id='scrolltotop'>&raquo;</div></a>"
+        "<a href='#' style='opacity: 1.0;'><div id='scrolltotop' style='font-family: \"Inter\";'>&raquo;</div></a>"
     );
 
     let stt = document.querySelector("#scrolltotop");
