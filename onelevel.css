@@ -45,6 +45,7 @@ button {
 button:hover {
     background: var(--color-bg);
     color: var(--color-tx);
+    border: 2px solid var(--color-tx);
 }
 
 /* ========== Text & Link ========== */
