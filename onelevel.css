@@ -74,7 +74,7 @@ a {
     color: var(--color-lk);
     text-decoration: none;
     border-bottom: calc(1rem/16) dashed grey;
-    transition: all ease 0.6s;
+    /* transition: all ease 0.6s; */
 }
 
 a:hover {
